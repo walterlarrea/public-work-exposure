@@ -1,0 +1,61 @@
+				#### Mustard & Emerald
+
+Emerald light: #A5CBC0
+Emerald normal: #7BC5AE
+Emerald dark: #399B7C
+Mustard light: #E4B619
+Mustard dark: #B47C05
+
+const theme = {
+  dark: {
+    primary: 'hsla(161, 39%, 63%, 1)',
+    primaryLight: 'hsla(163, 27%, 72%, 1)',
+    primaryDark: 'hsla(161, 46%, 42%, 1)',
+    secondary: 'hsla(46, 80%, 50%, 1)',
+    secondaryDark: 'hsla(41, 95%, 36%, 1)',
+    text: 'hsla(55, 36%, 95%, 1)',
+    background: 'hsla(198, 36%, 15%, 1)',
+  },
+  light: {
+    primary: 'hsla(161, 39%, 63%, 1)',
+    primaryLight: 'hsla(163, 27%, 72%, 1)',
+    primaryDark: 'hsla(161, 46%, 42%, 1)',
+    secondary: 'hsla(46, 80%, 50%, 1)',
+    secondaryDark: 'hsla(41, 95%, 36%, 1)',
+    text: 'hsla(198, 36%, 15%, 1)',
+    background: 'hsla(55, 36%, 95%, 1)'
+  },
+  fontFamily: 'Red Hat Display',
+  selected: 'dark'
+}
+
+				#### Mustard & Navy Blue
+
+Navy blue light: 638699
+Navy blue normal: 3F708C
+Navy blue dark: 04243C
+Mustard light: #FCC424
+Mustard dark: #F7AF1C
+
+const theme = {
+  dark: {
+    primary: 'hsla(44, 97%, 56%, 1)',
+    primaryDark: 'hsla(40, 93%, 54%, 1)',
+    secondary: 'hsla(202, 38%, 40%, 1)',
+    secondaryLight: 'hsla(201, 21%, 49%, 1)',
+    secondaryDark: 'hsla(206, 88%, 13%, 1)',
+    text: 'hsla(40, 93%, 90%, 1)',
+    background: 'hsla(206, 88%, 6%, 1)',
+  },
+  light: {
+    primary: 'hsla(44, 97%, 56%, 1)',
+    primaryDark: 'hsla(40, 93%, 54%, 1)',
+    secondary: 'hsla(202, 38%, 40%, 1)',
+    secondaryLight: 'hsla(201, 21%, 49%, 1)',
+    secondaryDark: 'hsla(206, 88%, 13%, 1)',
+    text: 'hsla(206, 88%, 6%, 1)',
+    background: 'hsla(40, 93%, 90%, 1)'
+  },
+  fontFamily: 'Red Hat Display',
+  selected: 'light'
+}
