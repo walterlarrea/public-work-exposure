@@ -25,7 +25,7 @@ const Navbar = ({ scrollLinkIds }) => {
 
   return (
     <StyledHeader>
-      <Link style={{ height: 70 }} activeClass="active" to={scrollLinkIds.home} spy={true} smooth={true} offset={-100} duration={500}>
+      <Link style={{ height: 70 }} activeClass="active" to={scrollLinkIds.about} spy={true} smooth={true} offset={-100} duration={500}>
         <StyledLogo src={logo} alt='portfolio icon shadowed detailed portfolio logo made by Vecteezy.com' />
       </Link>
       <nav>
@@ -35,7 +35,7 @@ const Navbar = ({ scrollLinkIds }) => {
       </nav>
 
       <StyledDropDownMenu>
-        <div ref={dropDownMenu}>
+        <div ref={dropDownMenu} >
           <NavbarList handleCloseMenu={handleCloseDropDownMenu} scrollLinkIds={scrollLinkIds} />
         </div>
       </StyledDropDownMenu>

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 export const StyledHeader = styled.header`
-  background-color: ${({ theme }) => theme[theme.selected].secondaryDark};
+  background-color: ${({ theme }) => theme.selected === 'light' ? theme[theme.selected].primary : theme[theme.selected].surface};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@ export const StyledDropDownMenu = styled.div`
     right: 0;
     height: auto;
     width: 0;
-    background-color: ${({ theme }) => theme[theme.selected].secondaryDark};
+    background-color: ${({ theme }) => theme.selected === 'light' ? theme[theme.selected].primary : theme[theme.selected].surface};
     backdrop-filter: blur(15px);
     overflow: hidden;
     transition: width 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -52,19 +52,19 @@ export const StyledDropDownMenu = styled.div`
 
   li a{
     font-weight: 700;
-    color: ${({ theme }) => theme.dark.text};
+    color: ${({ theme }) => theme[theme.selected] === 'light' ? theme.light.textOnPrimary : theme.dark.textOnSurface};
     text-decoration: none;
 
     &:hover{
-      color: ${({ theme }) => theme.selected === 'dark' ? theme.light.primaryDark : theme.dark.primary};
+      color: ${({ theme }) => theme[theme.selected].secondary};
     }
   }
   a.active{
-    color: ${({ theme }) => theme.selected === 'dark' ? theme.light.primaryDark : theme.dark.primary};
+    color: ${({ theme }) => theme[theme.selected].secondary};
   }
   svg{  
     vertical-align: middle;
-    color: ${({ theme }) => theme.dark.text};
+    color: ${({ theme }) => theme[theme.selected] === 'light' ? theme.light.textOnPrimary : theme.dark.textOnSurface};
     margin: 0 5px;
   }
 `
@@ -97,35 +97,35 @@ export const StyledNavList = styled.ul`
 
   li a{
     font-weight: 700;
-    color: ${({ theme }) => theme.dark.text};
+    color: ${({ theme }) => theme[theme.selected] === 'light' ? theme.light.textOnPrimary : theme.dark.textOnSurface};
     text-decoration: none;
 
     &:hover{
-      color: ${({ theme }) => theme.selected === 'dark' ? theme.light.primaryDark : theme.dark.primary};
+      color: ${({ theme }) => theme[theme.selected].secondary};
     }
   }
   a.active{
-    color: ${({ theme }) => theme.selected === 'dark' ? theme.light.primaryDark : theme.dark.primary};
+    color: ${({ theme }) => theme[theme.selected].secondary};
   }
   svg{  
     vertical-align: middle;
-    color: ${({ theme }) => theme.dark.text};
+    color: ${({ theme }) => theme[theme.selected] === 'light' ? theme.light.textOnPrimary : theme.dark.textOnSurface};
     margin: 0 5px;
   }
 `
 
 export const StyledNavButton = styled.button`
   font-weight: 700;
-  color: ${({ theme }) => theme.selected === 'dark' ? theme.dark.text : theme.light.text};
+  color: ${({ theme }) => theme[theme.selected].textOnPrimary}; 
   padding: 9px 25px;
-  background: ${({ theme }) => theme.selected === 'dark' ? theme.dark.background : theme.light.background};
+  /* background: ${({ theme }) => theme[theme.selected].primaryVariant}; */
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3 ease 0s;
 
   &:hover{
-    color: ${({ theme }) => theme.selected === 'dark' ? theme.dark.primaryDark : theme.light.primaryDark};
+    color: ${({ theme }) => theme[theme.selected].secondary};
     transform: scale(1.1)
   }
 `

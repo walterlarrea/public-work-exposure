@@ -18,8 +18,8 @@ const NavbarList = ({ scrollLinkIds, handleCloseMenu }) => {
   return (
     <>
       <li>
-        <Link onClick={handleCloseMenu} activeClass="active" to={scrollLinkIds.home} spy={true} smooth={true} offset={-100} duration={500}>
-          home
+        <Link onClick={handleCloseMenu} activeClass="active" to={scrollLinkIds.about} spy={true} smooth={true} offset={-100} duration={500}>
+          about
         </Link>
       </li>
       <li>
@@ -36,9 +36,9 @@ const NavbarList = ({ scrollLinkIds, handleCloseMenu }) => {
         <BsSunFill />
         {selectedTheme === 'dark'
           ?
-          <BsToggle2On onClick={() => handleToggleTheme('LIGHT')} />
+          <BsToggle2On style={{ fontSize: '25px' }} onClick={() => handleToggleTheme('LIGHT')} />
           :
-          <BsToggle2Off onClick={() => handleToggleTheme('DARK')} />
+          <BsToggle2Off style={{ fontSize: '25px' }} onClick={() => handleToggleTheme('DARK')} />
         }
         <BsMoonFill />
       </li>

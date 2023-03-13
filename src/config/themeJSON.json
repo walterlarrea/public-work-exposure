@@ -1,0 +1,32 @@
+{
+  "light": {
+    "primary": "hsla(265, 100%, 47%, 1)",
+    "primaryVariant": "hsla(258, 100%, 35%, 1)",
+    "secondary": "hsla(174, 97%, 43%, 1)",
+    "secondaryVariant": "hsla(180, 99%, 27%, 1)",
+    "background": "hsla(0, 0, 100%, 1)",
+    "surface": "hsla(0, 0%, 94%, 1)",
+    "error": "hsla(349, 100%, 35%, 1)",
+    "textOnPrimary": "hsla(0, 100%, 100%, 1)",
+    "textOnSecondary": "hsla(0, 0%, 0%, 1)",
+    "textOnBackground": "hsla(0, 0%, 0%, 1)",
+    "textOnSurface": "hsla(0, 0%, 0%, 1)",
+    "textOnError": "hsla(0, 100%, 100%, 1)"
+  },
+  "dark": {
+    "primary": "hsla(267, 95%, 76%, 1)",
+    "primaryVariant": "hsla(258, 100%, 35%, 1)",
+    "secondary": "hsla(174, 97%, 43%, 1)",
+    "secondaryVariant": "hsla(174, 97%, 43%, 1)",
+    "background": "hsla(0, 0%, 7%, 1)",
+    "surface": "hsla(0, 0%, 12%, 1)",
+    "error": "hsla(349, 52%, 61%, 1)",
+    "textOnPrimary": "hsla(0, 0%, 0%, 1)",
+    "textOnSecondary": "hsla(0, 0%, 0%, 1)",
+    "textOnBackground": "hsla(0, 100%, 100%, 1)",
+    "textOnSurface": "hsla(0, 100%, 100%, 1)",
+    "textOnError": "hsla(0, 0%, 0%, 1)"
+  },
+  "fontFamily": "Red Hat Display",
+  "selected": "light"
+}
