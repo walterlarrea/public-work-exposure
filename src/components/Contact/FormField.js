@@ -4,7 +4,7 @@ const FormField = ({ type, name, placeHolder }) => {
   return (
     <StyledFormField>
       <input id={name} type={type} name={name} />
-      <label For={name} >{placeHolder}</label>
+      <label htmlFor={name} >{placeHolder}</label>
     </StyledFormField>
   )
 }

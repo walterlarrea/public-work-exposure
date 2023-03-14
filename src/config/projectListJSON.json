@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Order summary card",
+    "description": "none",
+    "image": "images/projects-designs/order-summary-card-design.jpg",
+    "path": "order-summary-card/OrderSummaryCard",
+    "id": 1
+  },
+  {
+    "name": "Interactive Rating",
+    "description": "none",
+    "image": "images/projects-designs/interactive-rating-design.jpg",
+    "path": "interactive-rating/InteractiveRating",
+    "id": 2
+  }
+]

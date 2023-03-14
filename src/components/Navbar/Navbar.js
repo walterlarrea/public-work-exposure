@@ -1,5 +1,6 @@
 import { React, useRef } from 'react'
 import { Link } from 'react-scroll'
+import { Link as RouterLink } from 'react-router-dom'
 
 import logo from '../../images/vecteezy_portfolio-icon-shadowed-detailed-portfolio-logo_.png'
 import {
@@ -25,9 +26,11 @@ const Navbar = ({ scrollLinkIds }) => {
 
   return (
     <StyledHeader>
-      <Link style={{ height: 70 }} activeClass="active" to={scrollLinkIds.about} spy={true} smooth={true} offset={-100} duration={500}>
+      {/* <Link style={{ height: 70 }} to={scrollLinkIds.about} spy={true} smooth={true} offset={-100} duration={500}> */}
+      <RouterLink to='/'>
         <StyledLogo src={logo} alt='portfolio icon shadowed detailed portfolio logo made by Vecteezy.com' />
-      </Link>
+      </RouterLink>
+      {/* </Link> */}
       <nav>
         <StyledNavList>
           <NavbarList scrollLinkIds={scrollLinkIds} />

@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+
 import {
   StyledContainer,
   Card,
@@ -5,23 +8,32 @@ import {
   CardContent,
 } from './ProjectCard.style'
 
-import ShowcaseImage from '../../images/projects-designs/order-summary-card.jpg'
+const ProjectCard = ({ project }) => {
+  const [designImage, setDesignImage] = useState(null)
 
-const ProjectCard = () => {
+  useEffect(() => {
+    import(`../../${project.image}`)
+      .then(image => {
+        setDesignImage(image.default)
+      })
+  }, [project.image])
+
   return (
     <StyledContainer>
-      <Card>
-        <CardContent>
-          <h3>
-            Card title
-          </h3>
-          <p>
-            Card description in short format to describe de contents
-          </p>
-        </CardContent>
-        <CardImage src={ShowcaseImage} alt='algo' />
-      </Card>
-    </StyledContainer>
+      <Link style={{ textDecoration: 'none' }} to={`/project/${project.id}`}>
+        <Card>
+          <CardContent>
+            <h3>
+              {project.name}
+            </h3>
+            <p>
+              {project.description}
+            </p>
+          </CardContent>
+          <CardImage src={designImage} alt={project.name} />
+        </Card>
+      </Link>
+    </StyledContainer >
   )
 }
 

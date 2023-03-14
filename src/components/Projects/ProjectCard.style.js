@@ -24,7 +24,7 @@ export const Card = styled.div`
   align-items: center;
   height: 450px;
   max-width: 400px;
-  min-width: 350px;
+  min-width: 300px;
   margin: 10px 20px;
   border-radius: 20px;
   /* border: solid; */
@@ -42,7 +42,8 @@ export const Card = styled.div`
 
 export const CardImage = styled.img`
   @media screen and (min-width: 768px) {
-    width: 50%;
+    justify-self: center;
+    max-width: 70%;
   }
 
   width: 100%;
@@ -55,6 +56,7 @@ export const CardImage = styled.img`
 export const CardContent = styled.div`
   display: flex;
   height: 100%;
+  width: 100%;
   padding: 20px;
   flex-direction: column;
   align-items: center;
