@@ -1,5 +1,4 @@
 import { React, useRef } from 'react'
-import { Link } from 'react-scroll'
 import { Link as RouterLink } from 'react-router-dom'
 
 import logo from '../../images/vecteezy_portfolio-icon-shadowed-detailed-portfolio-logo_.png'

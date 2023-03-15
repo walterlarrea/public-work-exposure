@@ -11,7 +11,6 @@ const ProjectContainer = ({ project }) => {
     <>
       <Suspense fallback={<p>loading</p>}>
         <ProjectComponent />
-        {/* {projectComponents[project.componentName]} */}
       </Suspense>
     </>
   )

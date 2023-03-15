@@ -5,9 +5,7 @@ import backgroundMobileImage from './img/pattern-background-mobile.svg'
 export const StyledEnvironment = styled.div`
 /* body */
   @media screen and (min-width: 768px) {
-    body {
       background-image: url(${backgroundDesktopImage});
-    }
   }
 
   font-family: 'Red Hat Display', sans-serif;
@@ -39,7 +37,7 @@ export const CardBody = styled.div`
   border-radius: 20px;
   overflow: auto;
   width: 355px;
-  min-width: 355px;
+  min-width: 300px;
 `
 
 export const CardImage = styled.img`
@@ -99,6 +97,7 @@ export const ProceedToPaymentButton = styled.button`
   box-shadow: 0 10px 16px 0 rgba(56, 41, 224, 0.2);
   margin-bottom: 10px;
   font-weight: 600;
+  cursor: pointer;
 
   &:hover{
     background-color: hsl(245, 75%, 72%);
@@ -112,6 +111,7 @@ export const CancelPaymentButton = styled.button`
   width: 100%;
   padding: 15px;
   font-weight: 800;
+  cursor: pointer;
 
   &:hover{
     color: hsl(228, 4%, 10%);
@@ -123,6 +123,7 @@ export const ChangePlantLink = styled.a`
   background-color: hsla(0, 0%, 100%);
   margin: 15px;
   font-weight: 800;
+  cursor: pointer;
 
   &:hover{
     color: hsl(245, 75%, 72%);
