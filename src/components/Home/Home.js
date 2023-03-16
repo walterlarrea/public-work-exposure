@@ -3,7 +3,9 @@ import React from 'react'
 import About from '../../components/About/About'
 import Projects from '../../components/Projects/Projects'
 import Contact from '../../components/Contact/Contact'
-import Navbar from '../../components/Navbar/Navbar'
+import Menu from '../../components/Menu/Menu'
+
+import { Container } from './Home.styles'
 
 const Home = () => {
   const smoothScrollIds = {
@@ -13,11 +15,13 @@ const Home = () => {
   }
   return (
     <>
-      <Navbar scrollLinkIds={smoothScrollIds} />
+      <Menu />
       <main>
+        {/* <Container> */}
         <About id={smoothScrollIds.about} />
         <Projects id={smoothScrollIds.projects} />
         <Contact id={smoothScrollIds.contact} />
+        {/* </Container> */}
       </main>
     </>
   )

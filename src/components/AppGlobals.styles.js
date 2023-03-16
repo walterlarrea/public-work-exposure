@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+  :root{
+    --primary-color: hsl(265, 100%, 47%);
+  }
+
   * {
     box-sizing: border-box;
     margin: 0;

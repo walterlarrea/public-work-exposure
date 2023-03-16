@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useReducer, useContext } from "react";
 
 const themeReducer = (state, action) => {
   switch (action.type) {
@@ -12,6 +12,16 @@ const themeReducer = (state, action) => {
 }
 
 const ThemeContext = createContext()
+
+export const useThemeValue = () => {
+  const themeAndDispatch = useContext(ThemeContext)
+  return themeAndDispatch[0]
+}
+
+export const useThemeDispatch = () => {
+  const themeAndDispatch = useContext(ThemeContext)
+  return themeAndDispatch[1]
+}
 
 export const ThemeContextProvider = (props) => {
   const [theme, themeDispatch] = useReducer(themeReducer, 'light')

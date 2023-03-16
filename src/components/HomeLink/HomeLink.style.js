@@ -13,7 +13,7 @@ export const StyledHomeLink = styled(Link)`
   }
 
   background-color: ${({ theme }) => theme[theme.selected].surface};
-  color: ${({ theme }) => theme.selected === 'light' ? theme.light.primary : theme.dark.textOnSurface};
+  color: ${({ theme }) => theme[theme.selected].primary};
   height: 60px;
   width: 180px;
   display: flex;

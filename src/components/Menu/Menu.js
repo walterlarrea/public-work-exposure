@@ -1,20 +1,16 @@
 import { React, useRef, useState } from 'react'
-// import { Link } from 'react-router-dom'
-// import logo from '../../images/vecteezy_portfolio-icon-shadowed-detailed-portfolio-logo_.png'
-import NavbarList from './NavbarList'
+import Navbar from '../Navbar/Navbar'
 
 import {
   StyledHeader,
-  // StyledLogo,
   StyledHomeLink,
-  StyledNavList,
+  StyledNavbar,
   StyledBurgerIcon,
   SyledCrossIcon,
   StyledDropDownMenu
-} from './Navbar.style'
+} from './Menu.style'
 
-
-const Navbar = ({ scrollLinkIds }) => {
+const Menu = () => {
   const [dropDownOpen, setDropDownOpen] = useState(false)
 
   const dropDownMenu = useRef(null)
@@ -31,23 +27,18 @@ const Navbar = ({ scrollLinkIds }) => {
 
   return (
     <StyledHeader>
-      {/* <Link to='/'> */}
-      {/* <StyledLogo src={logo} alt='portfolio icon shadowed detailed portfolio logo made by Vecteezy.com' /> */}
       <StyledHomeLink to='/'>
         Walter.dev
       </StyledHomeLink>
-      {/* </Link> */}
-      <nav>
-        <StyledNavList>
-          <NavbarList scrollLinkIds={scrollLinkIds} />
-        </StyledNavList>
-      </nav>
 
-      <StyledDropDownMenu>
-        <div ref={dropDownMenu} >
-          <NavbarList handleCloseMenu={handleDropDownMenu} scrollLinkIds={scrollLinkIds} />
-        </div>
-      </StyledDropDownMenu>
+      <nav>
+        <StyledNavbar>
+          <Navbar />
+        </StyledNavbar>
+        <StyledDropDownMenu ref={dropDownMenu} >
+          <Navbar handleCloseMenu={handleDropDownMenu} />
+        </StyledDropDownMenu>
+      </nav>
 
       {dropDownOpen ?
         <SyledCrossIcon onClick={handleDropDownMenu} />
@@ -59,4 +50,4 @@ const Navbar = ({ scrollLinkIds }) => {
   )
 }
 
-export default Navbar
+export default Menu

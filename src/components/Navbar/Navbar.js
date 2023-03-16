@@ -1,61 +1,36 @@
-import { React, useRef, useState } from 'react'
-// import { Link } from 'react-router-dom'
-// import logo from '../../images/vecteezy_portfolio-icon-shadowed-detailed-portfolio-logo_.png'
-import NavbarList from './NavbarList'
+import { Link as Scroll } from 'react-scroll'
 
-import {
-  StyledHeader,
-  // StyledLogo,
-  StyledHomeLink,
-  StyledNavList,
-  StyledBurgerIcon,
-  SyledCrossIcon,
-  StyledDropDownMenu
-} from './Navbar.style'
+import { useThemeValue, useThemeDispatch } from '../../ThemeContext'
+import { StyledNavList, SunnyIcon, MoonIcon } from './Navbar.style'
 
+const Navbar = ({ handleCloseMenu }) => {
+  const selectedTheme = useThemeValue()
+  const dispatch = useThemeDispatch()
 
-const Navbar = ({ scrollLinkIds }) => {
-  const [dropDownOpen, setDropDownOpen] = useState(false)
-
-  const dropDownMenu = useRef(null)
-
-  const handleDropDownMenu = () => {
-    if (dropDownOpen) {
-      dropDownMenu.current.classList.remove('open')
-      setDropDownOpen(false)
-    } else {
-      dropDownMenu.current.classList.add('open')
-      setDropDownOpen(true)
-    }
+  const handleToggleTheme = (newTheme) => {
+    dispatch({ type: newTheme })
   }
 
   return (
-    <StyledHeader>
-      {/* <Link to='/'> */}
-      {/* <StyledLogo src={logo} alt='portfolio icon shadowed detailed portfolio logo made by Vecteezy.com' /> */}
-      <StyledHomeLink to='/'>
-        Walter.dev
-      </StyledHomeLink>
-      {/* </Link> */}
-      <nav>
-        <StyledNavList>
-          <NavbarList scrollLinkIds={scrollLinkIds} />
-        </StyledNavList>
-      </nav>
-
-      <StyledDropDownMenu>
-        <div ref={dropDownMenu} >
-          <NavbarList handleCloseMenu={handleDropDownMenu} scrollLinkIds={scrollLinkIds} />
-        </div>
-      </StyledDropDownMenu>
-
-      {dropDownOpen ?
-        <SyledCrossIcon onClick={handleDropDownMenu} />
-        :
-        <StyledBurgerIcon onClick={handleDropDownMenu} />
-      }
-
-    </StyledHeader>
+    <StyledNavList>
+      <li>
+        <Scroll onClick={handleCloseMenu} activeClass="active" to='about' spy={true} smooth={true} offset={-100} duration={500}>about</Scroll>
+      </li>
+      <li>
+        <Scroll onClick={handleCloseMenu} to='projects' spy={true} smooth={true} offset={-100} duration={500}>projects</Scroll>
+      </li>
+      <li>
+        <Scroll onClick={handleCloseMenu} to='contact' spy={true} smooth={true} offset={-100} duration={500}>contact</Scroll>
+      </li>
+      <li>
+        {selectedTheme === 'dark'
+          ?
+          <MoonIcon onClick={() => handleToggleTheme('LIGHT')} />
+          :
+          <SunnyIcon onClick={() => handleToggleTheme('DARK')} />
+        }
+      </li>
+    </StyledNavList>
   )
 }
 
