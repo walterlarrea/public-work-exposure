@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react'
+import React, { useContext } from 'react'
 import {
   Routes,
   Route,
@@ -12,24 +12,15 @@ import ThemeContext from './ThemeContext'
 import themeConfiguration from './config/themeJSON'
 import projectListData from './config/projectListJSON.json'
 
-import About from './components/About/About'
-import Projects from './components/Projects/Projects'
-import Contact from './components/Contact/Contact'
-import Navbar from './components/Navbar/Navbar'
-import ProjectContainer from './components/Projects/ProjectContainer'
+import Home from './components/Home/Home'
+import ProjectContainer from './components/ProjectContainer/ProjectContainer'
 
 function App() {
   const [selectedTheme, dispatch] = useContext(ThemeContext)
 
   const theme = { ...themeConfiguration, selected: selectedTheme }
 
-  const smoothScrollIds = {
-    about: 'about',
-    projects: 'projects',
-    contact: 'contact'
-  }
-
-  const match = useMatch('/project/:id')
+  const match = useMatch('/projects/:id')
   const project = match
     ? projectListData.find(p => p.id === Number(match.params.id))
     : null
@@ -37,8 +28,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Navbar scrollLinkIds={smoothScrollIds} />
-      <main>
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path="/projects/:id" element={<ProjectContainer project={project} />} />
+      </Routes>
+
+      {/*<Navbar scrollLinkIds={smoothScrollIds} />
+       <main>
         <Routes>
           <Route path="/" element={
             <>
@@ -47,10 +44,9 @@ function App() {
               <Contact id={smoothScrollIds.contact} />
             </>
           } />
-          <Route path="/project/:id" element={<ProjectContainer project={project} />} />
+          <Route path="/projects/:id" element={<ProjectContainer project={project} />} />
         </Routes>
-
-      </main>
+      </main> */}
     </ThemeProvider>
   );
 }

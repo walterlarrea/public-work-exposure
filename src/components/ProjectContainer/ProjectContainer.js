@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from 'react';
+import HomeLink from '../HomeLink/HomeLink';
 
 const ProjectContainer = ({ project }) => {
   const ProjectComponent = lazy(() => import(`../../project-components/${project.path}`))
@@ -9,6 +10,7 @@ const ProjectContainer = ({ project }) => {
 
   return (
     <>
+      <HomeLink />
       <Suspense fallback={<p>loading</p>}>
         <ProjectComponent />
       </Suspense>

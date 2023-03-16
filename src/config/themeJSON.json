@@ -4,7 +4,7 @@
     "primaryVariant": "hsla(258, 100%, 35%, 1)",
     "secondary": "hsla(174, 97%, 43%, 1)",
     "secondaryVariant": "hsla(180, 99%, 27%, 1)",
-    "background": "hsla(0, 0, 100%, 1)",
+    "background": "hsla(0, 0%, 100%, 1)",
     "surface": "hsla(0, 0%, 94%, 1)",
     "error": "hsla(349, 100%, 35%, 1)",
     "textOnPrimary": "hsla(0, 100%, 100%, 1)",

@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <StyledContainer>
-      <Link style={{ textDecoration: 'none' }} to={`/project/${project.id}`}>
+      <Link style={{ textDecoration: 'none' }} to={`/projects/${project.id}`}>
         <Card>
           <CardContent>
             <h3>
