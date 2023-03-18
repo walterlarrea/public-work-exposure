@@ -28,26 +28,27 @@ const Menu = () => {
 
   return (
     <StyledHeader>
-      <HeaderLink>
-        <AiOutlineCode />
-      </HeaderLink>
+      <div className='responsive-container'>
+        <HeaderLink>
+          <AiOutlineCode />
+        </HeaderLink>
 
-      <nav>
-        <StyledNavbar>
-          <Navbar />
-        </StyledNavbar>
+        <nav>
+          <StyledNavbar>
+            <Navbar />
+          </StyledNavbar>
 
-        <StyledDropDownMenu ref={dropDownMenu}>
-          <Navbar handleCloseMenu={handleDropDownMenu} />
-        </StyledDropDownMenu>
-      </nav>
+          <StyledDropDownMenu ref={dropDownMenu}>
+            <Navbar handleCloseMenu={handleDropDownMenu} />
+          </StyledDropDownMenu>
+        </nav>
 
-      {dropDownOpen ?
-        <SyledCrossIcon onClick={handleDropDownMenu} />
-        :
-        <StyledBurgerIcon onClick={handleDropDownMenu} />
-      }
-
+        {dropDownOpen ?
+          <SyledCrossIcon onClick={handleDropDownMenu} />
+          :
+          <StyledBurgerIcon onClick={handleDropDownMenu} />
+        }
+      </div>
     </StyledHeader>
   )
 }

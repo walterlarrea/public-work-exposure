@@ -3,10 +3,10 @@ import {
   StyledHr,
   StyledLogo,
   CopyrightParagraph,
-  SocialLinksContainer
+  // SocialLinksContainer
 } from './Footer.style'
 
-import { BsLinkedin, BsGithub } from 'react-icons/bs'
+// import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 const Footer = () => (
   <StyledFooter>
@@ -21,14 +21,14 @@ const Footer = () => (
         - Designed and built by Walter Larrea
       </CopyrightParagraph>
     </div>
-    <SocialLinksContainer>
+    {/* <SocialLinksContainer>
       <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/walter-larrea/' >
         <BsLinkedin title='https://www.linkedin.com/in/walter-larrea/' />
       </a>
       <a target='_blank' rel='noreferrer' href='https://github.com/walterlarrea'>
         <BsGithub title='https://github.com/walterlarrea' />
       </a>
-    </SocialLinksContainer>
+    </SocialLinksContainer> */}
   </StyledFooter>
 )
 

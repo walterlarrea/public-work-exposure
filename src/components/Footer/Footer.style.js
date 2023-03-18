@@ -23,10 +23,10 @@ export const StyledLogo = styled(AiOutlineCode)`
 `
 
 export const CopyrightParagraph = styled.p`
-  color: ${({ theme }) => theme[theme.selected].textOnBackground.slice(0, -2)}${'0.5)'};
+  color: ${({ theme }) => theme[theme.selected].textOnBackground.slice(0, -2)}${'0.7)'};
   width: auto;
   margin-bottom: 1rem;
-  font-family: 'acumin-pro', sans-serif;
+  /* font-family: 'acumin-pro', sans-serif; */
 `
 
 export const SocialLinksContainer = styled.div`

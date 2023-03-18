@@ -15,11 +15,12 @@ export const MoonIcon = styled(HiOutlineMoon)`
 
 export const StyledNavList = styled.ul`
   list-style: none;
+  display: flex;
+  align-items: center;
 
   li{
     display: inline-block;
-    padding: 0 20px;
-  
+    padding-right: 20px;
   }
 
   li a{

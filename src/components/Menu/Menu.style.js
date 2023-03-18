@@ -4,12 +4,15 @@ import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx'
 
 export const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme[theme.selected].surface};
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 3rem;
   position: sticky;
   top: 0;
+  
+  .responsive-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `
 
 export const StyledBurgerIcon = styled(RxHamburgerMenu)`
@@ -17,7 +20,7 @@ export const StyledBurgerIcon = styled(RxHamburgerMenu)`
     display: none;
   }
 
-  color: ${({ theme }) => theme.selected === 'light' ? theme.light.primary : theme.dark.textOnSurface};
+  color: ${({ theme }) => theme[theme.selected].textOnSurface};
   display: inline-block;
   height: 1.5em;
   margin-right: 15px;
@@ -28,7 +31,7 @@ export const SyledCrossIcon = styled(RxCross1)`
     display: none
   }
 
-  color: ${({ theme }) => theme.selected === 'light' ? theme.light.primary : theme.dark.textOnSurface};
+  color: ${({ theme }) => theme[theme.selected].textOnSurface};
   display: inline-block;
   height: 1.5em;
   margin-right: 15px;
@@ -46,7 +49,6 @@ export const StyledDropDownMenu = styled.div`
   @media screen and (min-width: 768px) {
     display: none
   }
-
   
     position: absolute;
     top: 3rem;
@@ -64,31 +66,11 @@ export const StyledDropDownMenu = styled.div`
 
   li{
     padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  }
+  ul{
+    flex-direction: column;
   }
 `
-
-// export const StyledHomeLink = styled(Link)`
-//   @media screen and (min-width: 768px) {
-//     width: 220px;
-//     font-size: 1.2em;
-//   }
-
-//   background-color: ${({ theme }) => theme[theme.selected].surface};
-//   color: ${({ theme }) => theme[theme.selected].primary};
-//   height: 3rem;
-//   width: 180px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-end;
-//   padding: 22px;
-//   font-weight: 600;
-//   text-decoration: none;
-//   font-size: 1em;
-//   border-radius: 0 40px 40px 0;
-// `
 
 export const StyledHomeLink = styled(Link)`
   @media screen and (min-width: 768px) {

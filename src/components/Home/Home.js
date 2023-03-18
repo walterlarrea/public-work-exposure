@@ -7,8 +7,6 @@ import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
 import Menu from '../../components/Menu/Menu'
 
-import { Container } from './Home.styles'
-
 const Home = () => {
   const smoothScrollIds = {
     presentation: 'presentation',
@@ -19,13 +17,13 @@ const Home = () => {
   return (
     <>
       <Menu />
-      <Container>
+      <div className='responsive-container'>
         <Presentation id={smoothScrollIds.presentation} />
         <About id={smoothScrollIds.about} />
         <Projects id={smoothScrollIds.projects} />
         <Contact id={smoothScrollIds.contact} />
         <Footer />
-      </Container>
+      </div>
     </>
   )
 }

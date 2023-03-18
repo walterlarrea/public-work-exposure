@@ -40,8 +40,4 @@ export const StyledH2 = styled.h2`
 
 export const StyledP = styled.p`
   color: ${({ theme }) => theme[theme.selected].textOnBackground.slice(0, -2)}${'0.8)'};
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  margin-right: 2rem;
 `
