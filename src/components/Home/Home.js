@@ -4,6 +4,7 @@ import Presentation from '../Presentation/Presentation'
 import About from '../../components/About/About'
 import Projects from '../../components/Projects/Projects'
 import Contact from '../../components/Contact/Contact'
+import Footer from '../../components/Footer/Footer'
 import Menu from '../../components/Menu/Menu'
 
 import { Container } from './Home.styles'
@@ -23,6 +24,7 @@ const Home = () => {
         <About id={smoothScrollIds.about} />
         <Projects id={smoothScrollIds.projects} />
         <Contact id={smoothScrollIds.contact} />
+        <Footer />
       </Container>
     </>
   )

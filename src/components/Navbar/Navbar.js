@@ -22,16 +22,16 @@ const Navbar = ({ handleCloseMenu }) => {
   return (
     <StyledNavList>
       <li>
-        <Scroll onClick={handleCloseMenu} activeClass="active" to={smoothScrollIds.presentation} spy={true} smooth={true} offset={-100} duration={500}>home</Scroll>
+        <Scroll onClick={handleCloseMenu} activeClass="active" to={smoothScrollIds.presentation} spy={true} smooth={true} offset={-60} duration={500}>home</Scroll>
       </li>
       <li>
-        <Scroll onClick={handleCloseMenu} to={smoothScrollIds.about} spy={true} smooth={true} offset={-100} duration={500}>about</Scroll>
+        <Scroll onClick={handleCloseMenu} to={smoothScrollIds.about} spy={true} smooth={true} offset={-60} duration={500}>about</Scroll>
       </li>
       <li>
-        <Scroll onClick={handleCloseMenu} to={smoothScrollIds.projects} spy={true} smooth={true} offset={-100} duration={500}>projects</Scroll>
+        <Scroll onClick={handleCloseMenu} to={smoothScrollIds.projects} spy={true} smooth={true} offset={-60} duration={500}>projects</Scroll>
       </li>
       <li>
-        <Scroll onClick={handleCloseMenu} to={smoothScrollIds.contact} spy={true} smooth={true} offset={-100} duration={500}>contact</Scroll>
+        <Scroll onClick={handleCloseMenu} to={smoothScrollIds.contact} spy={true} smooth={true} offset={-60} duration={500}>contact</Scroll>
       </li>
       <li>
         {selectedTheme === 'dark'

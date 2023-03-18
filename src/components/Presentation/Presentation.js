@@ -1,5 +1,5 @@
 import {
-  StyledMainElement,
+  StyledMain,
   Container,
   StyledSpan,
   StyledH1,
@@ -8,7 +8,7 @@ import {
 } from './Presentation.style'
 
 const Presentation = ({ id }) => (
-  <StyledMainElement id={id}>
+  <StyledMain id={id}>
     <Container>
       <StyledSpan>Hi there! 👋 My name is</StyledSpan>
       <StyledH1>Walter Larrea</StyledH1>
@@ -20,7 +20,7 @@ const Presentation = ({ id }) => (
         {/* I have bases on strong typed languages like C, Java and vb.NET. */}
       </StyledP>
     </Container>
-  </StyledMainElement>
+  </StyledMain>
 )
 
 export default Presentation

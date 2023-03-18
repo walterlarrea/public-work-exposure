@@ -7,7 +7,7 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 3rem;
   position: sticky;
   top: 0;
 `
@@ -49,7 +49,7 @@ export const StyledDropDownMenu = styled.div`
 
   
     position: absolute;
-    top: 60px;
+    top: 3rem;
     right: 0;
     height: auto;
     width: 0;
@@ -78,7 +78,7 @@ export const StyledDropDownMenu = styled.div`
 
 //   background-color: ${({ theme }) => theme[theme.selected].surface};
 //   color: ${({ theme }) => theme[theme.selected].primary};
-//   height: 60px;
+//   height: 3rem;
 //   width: 180px;
 //   display: flex;
 //   align-items: center;
@@ -98,7 +98,7 @@ export const StyledHomeLink = styled(Link)`
 
   background-color: ${({ theme }) => theme[theme.selected].surface};
   color: ${({ theme }) => theme[theme.selected].primary};
-  height: 60px;
+  height: 3rem;
   width: 180px;
   display: flex;
   justify-content: space-evenly;

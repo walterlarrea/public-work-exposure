@@ -8,7 +8,7 @@ export const StyledHomeLink = styled(Link)`
 
   background-color: ${({ theme }) => theme[theme.selected].surface};
   color: ${({ theme }) => theme[theme.selected].textOnSurface};
-  height: 60px;
+  height: 3rem;
   width: 180px;
   display: flex;
   justify-content: space-evenly;

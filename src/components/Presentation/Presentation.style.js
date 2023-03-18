@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
-export const StyledMainElement = styled.main`
-  height: calc(100vh - 60px);
+export const StyledMain = styled.main`
+  height: calc(100vh - 3rem);
   display: flex;
   align-items: center;
-
 `
 
 export const Container = styled.div`
