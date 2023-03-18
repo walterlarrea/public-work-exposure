@@ -19,27 +19,32 @@ export const StyledNavList = styled.ul`
   li{
     display: inline-block;
     padding: 0 20px;
-    
-    &:hover{
-      transform: scale(1.1);
-    }
+  
   }
 
   li a{
     font-weight: 700;
-    color: ${({ theme }) => theme[theme.selected].textOnSurface};
+    color: ${({ theme }) => theme[theme.selected].textOnSurface.slice(0, -2)}${'0.5)'};
     text-decoration: none;
+    border-bottom: 2.5px ${({ theme }) => theme[theme.selected].primary};
+    border-bottom-style: none;
+    transition: all 0.15s;
 
     &:hover{
-      color: ${({ theme }) => theme[theme.selected].secondary};
+      color: ${({ theme }) => theme[theme.selected].textOnSurface};
     }
   }
   a.active{
-    color: ${({ theme }) => theme[theme.selected].secondary};
+    border-bottom-style: solid;
+    color: ${({ theme }) => theme[theme.selected].textOnSurface};
   }
   svg{  
     vertical-align: middle;
-    color: ${({ theme }) => theme[theme.selected].textOnSurface};
+    color: ${({ theme }) => theme[theme.selected].textOnSurface.slice(0, -2)}${'0.5)'};
     margin: 0 5px;
+
+    &:hover{
+      color: ${({ theme }) => theme[theme.selected].textOnSurface};
+    }
   }
 `

@@ -1,13 +1,14 @@
-import ContactForm from './ContactForm'
+// import ContactForm from './ContactForm'
 
-import { StyledH2 } from '../Main.style'
+import { StyledH2, StyledHr } from '../Main.style'
 import { ContactIconsContainer } from './Contact.style'
 
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
 const Contact = ({ id }) => (
   <section id={id}>
-    <StyledH2>CONTACT</StyledH2>
+    <StyledH2>Contact</StyledH2>
+    <StyledHr />
 
     <ContactIconsContainer>
       <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/walter-larrea/' >
@@ -18,7 +19,7 @@ const Contact = ({ id }) => (
       </a>
     </ContactIconsContainer>
 
-    <ContactForm />
+    {/* <ContactForm /> */}
   </section>
 )
 

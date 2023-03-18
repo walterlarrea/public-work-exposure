@@ -85,7 +85,20 @@ export const StyledBold = styled.b`
 export const PlanCost = styled.p`
   color: hsl(228, 4%, 57%); 
   font-size: 16px;
-`
+  `
+
+export const ChangePlantLink = styled.a`
+    color: hsl(245, 75%, 52%);
+    background-color: hsl(225, 100%, 98%);
+    margin: 15px;
+    font-weight: 800;
+    cursor: pointer;
+  
+    &:hover{
+      color: hsl(245, 75%, 72%);
+      text-decoration: none;
+    }
+  `
 
 export const ProceedToPaymentButton = styled.button`
   color: hsl(225, 100%, 94%);
@@ -115,18 +128,5 @@ export const CancelPaymentButton = styled.button`
 
   &:hover{
     color: hsl(228, 4%, 10%);
-  }
-`
-
-export const ChangePlantLink = styled.a`
-  color: hsl(245, 75%, 52%);
-  background-color: hsla(0, 0%, 100%);
-  margin: 15px;
-  font-weight: 800;
-  cursor: pointer;
-
-  &:hover{
-    color: hsl(245, 75%, 72%);
-    text-decoration: none;
   }
 `

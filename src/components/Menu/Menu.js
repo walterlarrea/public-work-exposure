@@ -1,14 +1,15 @@
 import { React, useRef, useState } from 'react'
 import Navbar from '../Navbar/Navbar'
+import HeaderLink from '../HeaderLink/HeaderLink'
 
 import {
   StyledHeader,
-  StyledHomeLink,
   StyledNavbar,
   StyledBurgerIcon,
   SyledCrossIcon,
   StyledDropDownMenu
 } from './Menu.style'
+import { AiOutlineCode } from 'react-icons/ai'
 
 const Menu = () => {
   const [dropDownOpen, setDropDownOpen] = useState(false)
@@ -27,15 +28,16 @@ const Menu = () => {
 
   return (
     <StyledHeader>
-      <StyledHomeLink to='/'>
-        Walter.dev
-      </StyledHomeLink>
+      <HeaderLink>
+        <AiOutlineCode />
+      </HeaderLink>
 
       <nav>
         <StyledNavbar>
           <Navbar />
         </StyledNavbar>
-        <StyledDropDownMenu ref={dropDownMenu} >
+
+        <StyledDropDownMenu ref={dropDownMenu}>
           <Navbar handleCloseMenu={handleDropDownMenu} />
         </StyledDropDownMenu>
       </nav>

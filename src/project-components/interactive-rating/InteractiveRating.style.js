@@ -110,7 +110,7 @@ export const SubmitButton = styled.button`
   color: hsl(0, 0%, 100%);
   cursor: pointer;
 
-  &:active{
+  &:hover{
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
   }

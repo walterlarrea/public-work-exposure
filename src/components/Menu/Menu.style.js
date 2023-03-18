@@ -14,12 +14,12 @@ export const StyledHeader = styled.header`
 
 export const StyledBurgerIcon = styled(RxHamburgerMenu)`
   @media screen and (min-width: 768px) {
-    display: none
+    display: none;
   }
 
   color: ${({ theme }) => theme.selected === 'light' ? theme.light.primary : theme.dark.textOnSurface};
   display: inline-block;
-  height: 40px;
+  height: 1.5em;
   margin-right: 15px;
   width: auto;
 `
@@ -30,7 +30,7 @@ export const SyledCrossIcon = styled(RxCross1)`
 
   color: ${({ theme }) => theme.selected === 'light' ? theme.light.primary : theme.dark.textOnSurface};
   display: inline-block;
-  height: 40px;
+  height: 1.5em;
   margin-right: 15px;
   width: auto;
 `
@@ -70,6 +70,26 @@ export const StyledDropDownMenu = styled.div`
   }
 `
 
+// export const StyledHomeLink = styled(Link)`
+//   @media screen and (min-width: 768px) {
+//     width: 220px;
+//     font-size: 1.2em;
+//   }
+
+//   background-color: ${({ theme }) => theme[theme.selected].surface};
+//   color: ${({ theme }) => theme[theme.selected].primary};
+//   height: 60px;
+//   width: 180px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: flex-end;
+//   padding: 22px;
+//   font-weight: 600;
+//   text-decoration: none;
+//   font-size: 1em;
+//   border-radius: 0 40px 40px 0;
+// `
+
 export const StyledHomeLink = styled(Link)`
   @media screen and (min-width: 768px) {
     width: 220px;
@@ -81,11 +101,23 @@ export const StyledHomeLink = styled(Link)`
   height: 60px;
   width: 180px;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: flex-end;
-  padding: 22px;
   font-weight: 600;
   text-decoration: none;
   font-size: 1em;
   border-radius: 0 40px 40px 0;
+
+  &:hover{
+    color: ${({ theme }) => theme[theme.selected].secondary};
+  }
+
+  svg{
+    @media screen and (min-width: 768px) {
+      font-size: 1.4em;
+    }
+    
+    width: 1.2em;
+    height: auto;
+  }
 `

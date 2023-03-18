@@ -1,5 +1,7 @@
-import React, { lazy, Suspense } from 'react';
-import HomeLink from '../HomeLink/HomeLink';
+import React, { lazy, Suspense } from 'react'
+import HeaderLink from '../HeaderLink/HeaderLink'
+import { HeaderLinkContainer } from './ProjectContainer.style'
+import { BsBoxArrowInLeft } from 'react-icons/bs'
 
 const ProjectContainer = ({ project }) => {
   const ProjectComponent = lazy(() => import(`../../project-components/${project.path}`))
@@ -10,7 +12,11 @@ const ProjectContainer = ({ project }) => {
 
   return (
     <>
-      <HomeLink />
+      <HeaderLinkContainer>
+        <HeaderLink>
+          <BsBoxArrowInLeft />
+        </HeaderLink>
+      </HeaderLinkContainer>
       <Suspense fallback={<p>loading</p>}>
         <ProjectComponent />
       </Suspense>
