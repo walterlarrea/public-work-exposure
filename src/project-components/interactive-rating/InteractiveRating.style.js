@@ -74,6 +74,7 @@ export const SelectiveCicleContainer = styled(CircleContainer)`
 
 export const StyledH2 = styled.h2`
   font-family: 'Overpass', sans-serif;
+  color: hsl(0, 0%, 100%);
   font-size: 25px;
   margin-top: 20px;
   font-weight: 700;
@@ -81,6 +82,7 @@ export const StyledH2 = styled.h2`
 
 export const StyledP = styled.p`
   font-family: 'Overpass', sans-serif;
+  color: hsl(0, 0%, 100%);
   font-size: 15px;
   `
 
