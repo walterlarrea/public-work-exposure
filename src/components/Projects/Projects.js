@@ -1,6 +1,6 @@
 import projectListData from '../../config/projectListJSON.json'
 
-import ProjectCard from "./ProjectCard"
+import ProjectCard from "../ProjectCard/ProjectCard"
 import { StyledSectionH2, StyledSectionHr } from '.././Main.style'
 
 const Projects = ({ id }) => (

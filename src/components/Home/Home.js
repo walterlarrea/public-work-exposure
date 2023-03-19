@@ -1,31 +1,26 @@
-import React from 'react'
+import {
+  StyledMain,
+  Container,
+  StyledSpan,
+  StyledH1,
+  StyledH2,
+  StyledP
+} from './Home.style'
 
-import Presentation from '../Presentation/Presentation'
-import About from '../../components/About/About'
-import Projects from '../../components/Projects/Projects'
-import Contact from '../../components/Contact/Contact'
-import Footer from '../../components/Footer/Footer'
-import Menu from '../../components/Menu/Menu'
-
-const Home = () => {
-  const smoothScrollIds = {
-    presentation: 'presentation',
-    about: 'about',
-    projects: 'projects',
-    contact: 'contact'
-  }
-  return (
-    <>
-      <Menu />
-      <div className='responsive-container'>
-        <Presentation id={smoothScrollIds.presentation} />
-        <About id={smoothScrollIds.about} />
-        <Projects id={smoothScrollIds.projects} />
-        <Contact id={smoothScrollIds.contact} />
-        <Footer />
-      </div>
-    </>
-  )
-}
+const Home = ({ id }) => (
+  <StyledMain id={id}>
+    <Container>
+      <StyledSpan>Hi there! 👋 My name is</StyledSpan>
+      <StyledH1>Walter Larrea</StyledH1>
+      <StyledH2>Web development student</StyledH2>
+      <StyledP>
+        Passionated for coding & dev.
+        <br />
+        Now studying Fullstack Web development focused on React.
+        {/* I have bases on strong typed languages like C, Java and vb.NET. */}
+      </StyledP>
+    </Container>
+  </StyledMain>
+)
 
 export default Home

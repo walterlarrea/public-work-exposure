@@ -8,8 +8,9 @@ const Navbar = ({ handleCloseMenu }) => {
   const dispatch = useThemeDispatch()
 
   const smoothScrollIds = {
-    presentation: 'presentation',
+    home: 'home',
     about: 'about',
+    skills: 'skills',
     projects: 'projects',
     contact: 'contact'
   }
@@ -22,10 +23,13 @@ const Navbar = ({ handleCloseMenu }) => {
   return (
     <StyledNavList>
       <li>
-        <Scroll onClick={handleCloseMenu} activeClass="active" to={smoothScrollIds.presentation} spy={true} smooth={true} offset={-60} duration={500}>home</Scroll>
+        <Scroll onClick={handleCloseMenu} activeClass="active" to={smoothScrollIds.home} spy={true} smooth={true} offset={-60} duration={500}>home</Scroll>
       </li>
       <li>
         <Scroll onClick={handleCloseMenu} to={smoothScrollIds.about} spy={true} smooth={true} offset={-60} duration={500}>about</Scroll>
+      </li>
+      <li>
+        <Scroll onClick={handleCloseMenu} to={smoothScrollIds.skills} spy={true} smooth={true} offset={-60} duration={500}>skills</Scroll>
       </li>
       <li>
         <Scroll onClick={handleCloseMenu} to={smoothScrollIds.projects} spy={true} smooth={true} offset={-60} duration={500}>projects</Scroll>

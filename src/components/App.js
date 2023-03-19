@@ -7,7 +7,7 @@ import { useThemeValue } from '../ThemeContext'
 import themeConfiguration from '../config/themeJSON'
 import projectListData from '../config/projectListJSON.json'
 
-import Home from './Home/Home'
+import MainPage from './MainPage/MainPage'
 import ProjectContainer from './ProjectContainer/ProjectContainer'
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
       <GlobalStyle />
 
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<MainPage />} />
         <Route path="/projects/:id" element={<ProjectContainer project={project} />} />
       </Routes>
     </ThemeProvider>
