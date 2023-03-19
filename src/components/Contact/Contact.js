@@ -3,7 +3,7 @@
 import { StyledSectionH2, StyledSectionHr } from '../Main.style'
 import { ContactIconsContainer } from './Contact.style'
 
-import { BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BsLinkedin, BsGithub, BsEnvelopeOpenFill } from 'react-icons/bs'
 
 const Contact = ({ id }) => (
   <section id={id}>
@@ -16,6 +16,9 @@ const Contact = ({ id }) => (
       </a>
       <a target='_blank' rel='noreferrer' href='https://github.com/walterlarrea'>
         <BsGithub title='https://github.com/walterlarrea' />
+      </a>
+      <a target='_blank' rel='noreferrer' href='mailto:walterlarrea@live.com' >
+        <BsEnvelopeOpenFill title='walterlarrea@live.com' />
       </a>
     </ContactIconsContainer>
 

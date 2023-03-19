@@ -20,7 +20,7 @@ export const StyledNavList = styled.ul`
 
   li{
     display: inline-block;
-    padding-right: 20px;
+    padding-left: 20px;
   }
 
   li a{

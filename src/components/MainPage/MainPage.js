@@ -4,6 +4,7 @@ import Home from '../Home/Home'
 import About from '../About/About'
 import Skills from '../Skills/Skills'
 import Projects from '../Projects/Projects'
+import SingleComponentProjects from '../SingleComponentProjects/SingleComponentProjects'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
 import Menu from '../Menu/Menu'
@@ -24,6 +25,7 @@ const MainPage = () => {
         <About id={smoothScrollIds.about} />
         <Skills id={smoothScrollIds.skills} />
         <Projects id={smoothScrollIds.projects} />
+        <SingleComponentProjects />
         <Contact id={smoothScrollIds.contact} />
         <Footer />
       </div>

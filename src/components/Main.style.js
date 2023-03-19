@@ -9,8 +9,28 @@ export const StyledSectionH2 = styled.h2`
   margin-bottom: 0.5rem;
 `
 
+export const StyledSectionH3 = styled.h3`
+  color: ${({ theme }) => theme[theme.selected].textOnBackground};
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 0;
+  margin-bottom: 0.5rem;
+`
+
 export const StyledSectionHr = styled.hr`
   background-color: ${({ theme }) => theme[theme.selected].primary};
+  border: 0;
+  height: 0.37rem;
+  width: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+`
+
+export const StyledSecondaryHr = styled.hr`
+  background-color: ${({ theme }) => theme[theme.selected].primary};
+  position: relative;
+  left: calc(50% - 4rem);
   border: 0;
   height: 0.37rem;
   width: 8rem;

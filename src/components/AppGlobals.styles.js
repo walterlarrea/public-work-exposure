@@ -30,7 +30,11 @@ export const GlobalStyle = createGlobalStyle`
     padding-right: 2rem;
     max-width: 768px;
   }
-   
+
+  @media screen and (min-width: 992px) {
+    max-width: 992px;
+  }
+
   @media screen and (min-width: 1024px) {
     max-width: 1024px;
   }

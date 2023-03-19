@@ -7,6 +7,7 @@ export const StyledHeader = styled.header`
   height: 3rem;
   position: sticky;
   top: 0;
+  z-index: 2;
   
   .responsive-container{
     display: flex;

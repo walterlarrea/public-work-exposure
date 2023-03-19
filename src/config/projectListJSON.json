@@ -1,16 +1,31 @@
 [
   {
     "name": "Order summary card",
-    "description": "none",
+    "type": "small",
     "image": "images/projects-designs/order-summary-card-design.jpg",
     "path": "order-summary-card/OrderSummaryCard",
     "id": 1
   },
   {
     "name": "Interactive Rating",
-    "description": "none",
+    "type": "small",
     "image": "images/projects-designs/interactive-rating-design.jpg",
     "path": "interactive-rating/InteractiveRating",
     "id": 2
+  },
+  {
+    "name": "eCommerce (eMercado)",
+    "type": "full",
+    "description": "Made for educational purposes as part of the \"Jóvenes a programar\" course by Plan Ceibal.",
+    "referrals": [
+      {
+        "name": "Jóvenes a programar",
+        "url": "https://jovenesaprogramar.edu.uy/"
+      }
+    ],
+    "image": "images/projects-designs/ecommerce-emercado.jpg",
+    "url": "https://walterlarrea.github.io/eMercado/",
+    "sourceUrl": "https://github.com/walterlarrea/eMercado",
+    "id": 3
   }
 ]
