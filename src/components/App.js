@@ -25,8 +25,8 @@ function App() {
       <GlobalStyle />
 
       <Routes>
-        <Route path='/' element={<MainPage />} />
         <Route path="/projects/:id" element={<ProjectContainer project={project} />} />
+        <Route path='/' element={<MainPage />} />
       </Routes>
     </ThemeProvider>
   );
