@@ -1,9 +1,9 @@
 import { StyledHomeLink } from "./HeaderLink.style"
 
-const HeaderLink = ({ children }) => {
+const HeaderLink = ({ children, targetRoute }) => {
 
   return (
-    <StyledHomeLink to='/'>
+    <StyledHomeLink to={targetRoute}>
       {children}
       Walter.dev
     </StyledHomeLink>

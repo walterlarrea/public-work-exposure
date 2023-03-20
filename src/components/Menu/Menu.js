@@ -29,7 +29,7 @@ const Menu = () => {
   return (
     <StyledHeader>
       <div className='responsive-container'>
-        <HeaderLink>
+        <HeaderLink targetRoute={'/'}>
           <AiOutlineCode />
         </HeaderLink>
 
