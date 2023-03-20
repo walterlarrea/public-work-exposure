@@ -14,10 +14,15 @@ const Home = ({ id }) => (
       <StyledH1>Walter Larrea</StyledH1>
       <StyledH2>Web development student</StyledH2>
       <StyledP>
+        {/*Seeking a job where I can deliver quality work and contribute to the success of the company. */}
+        I'm ready to adapt and deliver quality work.
+        <br />
+        to evolve and build according to the requirements.
+        <br />
+        <br />
         Passionated for coding & dev.
         <br />
         Now studying Fullstack Web development focused on React.
-        {/* I have bases on strong typed languages like C, Java and vb.NET. */}
       </StyledP>
     </Container>
   </StyledMain>
