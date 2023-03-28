@@ -15,23 +15,23 @@ const About = ({ id }) => (
       When I was nineteen, I was still studying Computer Science in high school and using all my spare time trying to code anything I could.
       I created simple C programs, some VB.NET school assignments, and even did some 'freelance' work creating little .LUA scripts for games.
     </p>
-    <p>
+    {/* <p>
       However, I then became confused about studying and personal stuff, so I decided to get a job and start living independently.
       A couple of years later, I found myself programming again while finishing high school and exploring new opportunities.
-    </p>
+    </p> */}
     <p>
-      These days, I spend most of my free time studying, practicing, and gaining hands-on experience in IT.
-      I'm taking every opportunity to improve my technical and soft skills while also learning about the software development process.
-      Whenever I incorporate new knowledge into my work or deliver a Git push to my repositories, I feel a rush of motivation.
+      These days, I spend most of my free time studying, practicing, and gaining hands-on experience.
+      I'm taking every opportunity to improve my technical and soft skills, while also learning about the software development processes.
+      {/* Whenever I incorporate new knowledge into my work or deliver a Git push to my repositories, I feel a rush of motivation. */}
     </p>
     <p>
       Recently, I completed a Front-end Web development course that covered vanilla JS, HTML, and CSS.
-      From there, I took the time to understand some key features of JavaScript, and dove into React, MongoDB, Node, and Express.
-      So my focus right now is on the MERN stack, but mostly within the JS ecosystem given its flexibility.
+      From there, I took the time to understand the key features of JavaScript, and dove into React, Node, Express, and MongoDB.
+      So my focus right now is on the MERN stack.
     </p>
     <p>
       Overall, I am excited to continue learning and growing as a developer,
-      and I am eager to contribute my skills and knowledge to a team or organization that values innovation,
+      and I am eager to contribute my skills and knowledge to a team or organization that values commitment,
       collaboration, and continuous improvement.
     </p>
     <br />

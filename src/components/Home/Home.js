@@ -12,12 +12,11 @@ const Home = ({ id }) => (
     <Container>
       <StyledSpan>Hi there! 👋 My name is</StyledSpan>
       <StyledH1>Walter Larrea</StyledH1>
-      <StyledH2>Web development student</StyledH2>
+      <StyledH2>Junior web development</StyledH2>
       <StyledP>
-        {/*Seeking a job where I can deliver quality work and contribute to the success of the company. */}
-        I'm ready to adapt and deliver quality work.
+        I'm ready to adapt and evolve,
         <br />
-        to evolve and build according to the requirements.
+        commited to build and deliver.
         <br />
         <br />
         Passionated for coding & dev.
