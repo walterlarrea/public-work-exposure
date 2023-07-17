@@ -20,7 +20,7 @@ const MainPage = () => {
   return (
     <>
       <Menu />
-      <div className='responsive-container'>
+      <main className='responsive-container'>
         <Home id={smoothScrollIds.home} />
         <About id={smoothScrollIds.about} />
         <Skills id={smoothScrollIds.skills} />
@@ -28,7 +28,7 @@ const MainPage = () => {
         <SingleComponentProjects />
         <Contact id={smoothScrollIds.contact} />
         <Footer />
-      </div>
+      </main>
     </>
   )
 }

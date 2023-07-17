@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledMain = styled.main`
+export const StyledMain = styled.section`
   height: calc(100vh - 3rem);
   display: flex;
   align-items: center;
