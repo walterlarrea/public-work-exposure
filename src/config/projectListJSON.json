@@ -27,5 +27,20 @@
     "url": "https://walterlarrea.github.io/eMercado/",
     "sourceUrl": "https://github.com/walterlarrea/eMercado",
     "id": 3
+  },
+  {
+    "name": "Sonoro",
+    "type": "full",
+    "description": "Using the Spotify web API, we are building this music app for senior citizens (70+ years). For educational purposes as a self-managed project, part of the \"Jóvenes a programar\" course by Plan Ceibal.",
+    "referrals": [
+      {
+        "name": "Jóvenes a programar",
+        "url": "https://jovenesaprogramar.edu.uy/"
+      }
+    ],
+    "image": "images/projects-designs/sonoro-spotify.jpg",
+    "url": "https://sonoro2.vercel.app/",
+    "sourceUrl": "https://github.com/walterlarrea/sonoro2",
+    "id": 4
   }
 ]
